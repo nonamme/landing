@@ -1,0 +1,62 @@
+doctype html
+html
+	head
+		title Design 01
+		style
+			include main.css
+	body
+		#top
+			.container
+				#let-split
+					#logo
+						p Kamil Lewandowski
+					#menu
+						nav
+							ul
+								li.home
+									a(href='#home') home
+								li.design
+									a(href='#design') design
+								li.coding
+									a(href='#coding') coding
+								li.contact
+									a(href='#contact') contact
+		#content			
+				#home
+					.cover
+						.container
+							.desc.keep-it-left
+								h1 Lorem ipsum
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms. Duis aute irure dolor in reprehenderit in volmuptate velit esse cismmmmmmm dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non prosentmmmm, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms.
+
+				#design
+					.cover
+						.container
+							.desc.keep-it-right
+								h1 Website desing process
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms. Duis aute irure dolor in reprehenderit in volmuptate velit esse cismmmmmmm dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non prosentmmmm, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms.
+
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms. Duis aute irure dolor in reprehenderit in volmuptate velit esse cismmmmmmm dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non prosentmmmm, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+				#coding
+					.cover
+						.container
+							.desc.keep-it-left			
+								h1 Programming with Ruby on Rails
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms. Duis aute irure dolor in reprehenderit in volmuptate velit esse cismmmmmmm dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non prosentmmmm, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms.
+
+				#contact
+					.cover
+						.container
+							#email-wrapper
+								h1 Contact with me
+								form( method='post' action='sendmail')
+									#input-holder
+										input( type='email' name='email' placeholder='Type you email')
+									#input-holder
+										textarea( name='message' placeholder='Type your message here' )
+									#input-holder
+										input( type='submit' value='Wyslij wiadomosc')
+				
+				script(src='http://code.jquery.com/jquery-1.12.0.min.js')
+				script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
+				script(src='app.js') 
