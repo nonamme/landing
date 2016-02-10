@@ -12,19 +12,23 @@
 
 body {
 	background-color: #fff;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 
 nav {
 	float: right;
+	display: flex-block;
 }
 
 ul * {
+	display: flex-block;
+	flex-wrap: wrap;
 	list-style: none;
 	font-size: 0.7rem;
 }
 
 ul li {
+	flex: 1;
 	display: inline;
 	text-align: center;
 	padding: 16px 25px;
@@ -49,6 +53,8 @@ ul li.coding:hover {
 ul li.contact:hover {
 	background-color: #FEC606;
 }
+
+
 
 a {
 	text-decoration: none;
@@ -217,4 +223,47 @@ input[type='submit'] {
 	left: auto;
 	right: auto;
 	margin-left: auto;
+}
+
+
+@media all and (max-width: 640px){
+	ul {
+		display: none;
+	}
+
+	ul li {
+		display: block;
+	}
+
+	nav {
+		display: inline;
+		float: none;
+	}
+
+	#mobile {
+		text-align: right;
+	}
+
+	span.mobile {
+		display: inline-block;
+		padding: 7px 5px;
+		transform: rotate(90deg);
+	}
+
+	.mobile:hover {
+		background-color: azure;
+		opacity: .5;
+	}
+
+	.mobile span {
+		padding: 3px 2px;
+		background-color: #3366ff;
+		margin: 2px;
+	}
+
+	#logo,
+	#menu {
+		display: block;
+	}
+
 }

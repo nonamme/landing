@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Design 01</title>
-    <style>@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+<!DOCTYPE html><html><head><title>Design 01</title><style>@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Kalam:400,300,700);
 
 * {
@@ -16,19 +12,23 @@
 
 body {
 	background-color: #fff;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 
 nav {
 	float: right;
+	display: flex-block;
 }
 
 ul * {
+	display: flex-block;
+	flex-wrap: wrap;
 	list-style: none;
 	font-size: 0.7rem;
 }
 
 ul li {
+	flex: 1;
 	display: inline;
 	text-align: center;
 	padding: 16px 25px;
@@ -53,6 +53,8 @@ ul li.coding:hover {
 ul li.contact:hover {
 	background-color: #FEC606;
 }
+
+
 
 a {
 	text-decoration: none;
@@ -222,83 +224,46 @@ input[type='submit'] {
 	right: auto;
 	margin-left: auto;
 }
-    </style>
-  </head>
-  <body>
-    <div id="top">
-      <div class="container">
-        <div id="let-split">
-          <div id="logo">
-            <p>Kamil Lewandowski</p>
-          </div>
-          <div id="menu">
-            <nav>
-              <ul>
-                <li class="home"><a href="#home">home</a></li>
-                <li class="design"><a href="#design">design</a></li>
-                <li class="coding"><a href="#coding">coding</a></li>
-                <li class="contact"><a href="#contact">contact</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="content">			
-      <div id="home">
-        <div class="cover">
-          <div class="container">
-            <div class="desc keep-it-left">
-              <h1>Lorem ipsum</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms. Duis aute irure dolor in reprehenderit in volmuptate velit esse cismmmmmmm dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non prosentmmmm, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="design">
-        <div class="cover">
-          <div class="container">
-            <div class="desc keep-it-right">
-              <h1>Website desing process</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms. Duis aute irure dolor in reprehenderit in volmuptate velit esse cismmmmmmm dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non prosentmmmm, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms. Duis aute irure dolor in reprehenderit in volmuptate velit esse cismmmmmmm dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non prosentmmmm, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="coding">
-        <div class="cover">
-          <div class="container">
-            <div class="desc keep-it-left">			
-              <h1>Programming with Ruby on Rails</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms. Duis aute irure dolor in reprehenderit in volmuptate velit esse cismmmmmmm dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non prosentmmmm, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="contact">
-        <div class="cover">
-          <div class="container">
-            <div id="email-wrapper">
-              <h1>Contact with me</h1>
-              <form method="post" action="sendmail">
-                <div id="input-holder">
-                  <input type="email" name="email" placeholder="Type you email">
-                </div>
-                <div id="input-holder">
-                  <textarea name="message" placeholder="Type your message here"></textarea>
-                </div>
-                <div id="input-holder">
-                  <input type="submit" value="Wyslij wiadomosc">
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-      <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-      <script src="app.js"> </script>
-    </div>
-  </body>
-</html>
+
+
+@media all and (max-width: 640px){
+	ul {
+		display: none;
+	}
+
+	ul li {
+		display: block;
+	}
+
+	nav {
+		display: inline;
+		float: none;
+	}
+
+	#mobile {
+		text-align: right;
+	}
+
+	span.mobile {
+		display: inline-block;
+		padding: 7px 5px;
+		transform: rotate(90deg);
+	}
+
+	.mobile:hover {
+		background-color: azure;
+		opacity: .5;
+	}
+
+	.mobile span {
+		padding: 3px 2px;
+		background-color: #3366ff;
+		margin: 2px;
+	}
+
+	#logo,
+	#menu {
+		display: block;
+	}
+
+}</style></head><body><div id="top"><div class="container"><div id="logo-mobile"><div id="let-split"><div id="logo"><p>Kamil Lewandowski</p></div><div id="mobile"><span class="mobile"><span></span><span></span><span></span></span></div></div></div><div id="menu"><nav><ul><li class="home"><a href="#home">home		</a></li><li class="design"><a href="#design">design</a></li><li class="coding"><a href="#coding">coding					</a></li><li class="contact"><a href="#contact">contact</a></li></ul></nav></div></div></div><div id="content">			<div id="home"><div class="cover"><div class="container"><div class="desc keep-it-left"><h1>Lorem ipsum</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms. Duis aute irure dolor in reprehenderit in volmuptate velit esse cismmmmmmm dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non prosentmmmm, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms.</p></div></div></div></div><div id="design"><div class="cover"><div class="container"><div class="desc keep-it-right"><h1>Website desing process</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms. Duis aute irure dolor in reprehenderit in volmuptate velit esse cismmmmmmm dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non prosentmmmm, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms. Duis aute irure dolor in reprehenderit in volmuptate velit esse cismmmmmmm dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non prosentmmmm, sunt in culpa qui officia deserunt mollit anim id est laborum. </p></div></div></div></div><div id="coding"><div class="cover"><div class="container"><div class="desc keep-it-left">			<h1>Programming with Ruby on Rails</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms. Duis aute irure dolor in reprehenderit in volmuptate velit esse cismmmmmmm dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non prosentmmmm, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	sammms incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qsmmms nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo conmmms.</p></div></div></div></div><div id="contact"><div class="cover"><div class="container"><div id="email-wrapper"><h1>Contact with me</h1><form method="post" action="sendmail"><div id="input-holder"><input type="email" name="email" placeholder="Type you email"></div><div id="input-holder"><textarea name="message" placeholder="Type your message here"></textarea></div><div id="input-holder"><input type="submit" value="Wyslij wiadomosc"></div></form></div></div></div></div><script src="http://code.jquery.com/jquery-1.12.0.min.js"></script><script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script><script src="app.js"></script><script src="main.js"></script></div></body></html>

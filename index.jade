@@ -7,20 +7,26 @@ html
 	body
 		#top
 			.container
-				#let-split
-					#logo
-						p Kamil Lewandowski
-					#menu
-						nav
-							ul
-								li.home
-									a(href='#home') home
-								li.design
-									a(href='#design') design
-								li.coding
-									a(href='#coding') coding
-								li.contact
-									a(href='#contact') contact
+				#logo-mobile
+					#let-split
+						#logo
+							p Kamil Lewandowski
+						#mobile
+							span.mobile
+								span
+								span
+								span
+				#menu
+					nav
+						ul
+							li.home
+								a(href='#home') home		
+							li.design
+								a(href='#design') design
+							li.coding
+								a(href='#coding') coding					
+							li.contact
+								a(href='#contact') contact
 		#content			
 				#home
 					.cover
@@ -59,4 +65,5 @@ html
 				
 				script(src='http://code.jquery.com/jquery-1.12.0.min.js')
 				script(src='http://code.jquery.com/jquery-migrate-1.2.1.min.js')
-				script(src='app.js') 
+				script(src='app.js')
+				script(src='main.js')
